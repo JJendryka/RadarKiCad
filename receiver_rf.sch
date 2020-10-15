@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,200 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 8300 3950 2    100  Input ~ 0
+RF_IN
+Text HLabel 5200 3150 2    100  Input ~ 0
+LO_IN
+Text HLabel 3650 3850 0    100  Output ~ 0
+IF_OUT
+$Comp
+L Device:C C?
+U 1 1 5F8B845C
+P 7850 3950
+F 0 "C?" V 7598 3950 50  0000 C CNN
+F 1 "22pF" V 7689 3950 50  0000 C CNN
+F 2 "" H 7888 3800 50  0001 C CNN
+F 3 "~" H 7850 3950 50  0001 C CNN
+	1    7850 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3950 7700 3950
+Wire Wire Line
+	8000 3950 8300 3950
+$Comp
+L Device:C C?
+U 1 1 5F8B8D04
+P 5550 3850
+F 0 "C?" V 5298 3850 50  0000 C CNN
+F 1 "22pF" V 5389 3850 50  0000 C CNN
+F 2 "" H 5588 3700 50  0001 C CNN
+F 3 "~" H 5550 3850 50  0001 C CNN
+	1    5550 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3850 5900 3850
+$Comp
+L Device:L L?
+U 1 1 5F8B94E9
+P 5900 3550
+F 0 "L?" H 5953 3596 50  0000 L CNN
+F 1 "10nH" H 5953 3505 50  0000 L CNN
+F 2 "" H 5900 3550 50  0001 C CNN
+F 3 "~" H 5900 3550 50  0001 C CNN
+	1    5900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3700 5900 3850
+Connection ~ 5900 3850
+Wire Wire Line
+	5900 3850 5700 3850
+Wire Wire Line
+	5900 2650 5900 2850
+$Comp
+L Device:C C?
+U 1 1 5F8BA0F4
+P 6100 2850
+F 0 "C?" V 5848 2850 50  0000 C CNN
+F 1 "22uF" V 5939 2850 50  0000 C CNN
+F 2 "" H 6138 2700 50  0001 C CNN
+F 3 "~" H 6100 2850 50  0001 C CNN
+	1    6100 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F8BA3A2
+P 6100 3250
+F 0 "C?" V 5848 3250 50  0000 C CNN
+F 1 "100pF" V 5939 3250 50  0000 C CNN
+F 2 "" H 6138 3100 50  0001 C CNN
+F 3 "~" H 6100 3250 50  0001 C CNN
+	1    6100 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2850 5900 2850
+Connection ~ 5900 2850
+Wire Wire Line
+	5900 2850 5900 3250
+Wire Wire Line
+	5950 3250 5900 3250
+Connection ~ 5900 3250
+Wire Wire Line
+	5900 3250 5900 3400
+Wire Wire Line
+	6250 2850 6300 2850
+Wire Wire Line
+	6300 2850 6300 3250
+Wire Wire Line
+	6300 3250 6250 3250
+Wire Wire Line
+	6300 3250 6300 3300
+Connection ~ 6300 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5F8BB071
+P 6300 3300
+F 0 "#PWR?" H 6300 3050 50  0001 C CNN
+F 1 "GND" H 6305 3127 50  0000 C CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8BBC9F
+P 6050 4150
+F 0 "#PWR?" H 6050 3900 50  0001 C CNN
+F 1 "GND" H 6055 3977 50  0000 C CNN
+F 2 "" H 6050 4150 50  0001 C CNN
+F 3 "" H 6050 4150 50  0001 C CNN
+	1    6050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4100 6050 4100
+Wire Wire Line
+	6050 4100 6050 4150
+$Comp
+L own:PMA-63GLN+ U?
+U 1 1 5F8BCDE2
+P 6850 3850
+F 0 "U?" H 6825 4165 50  0000 C CNN
+F 1 "PMA-63GLN+" H 6825 4074 50  0000 C CNN
+F 2 "" H 6850 3850 100 0001 C CNN
+F 3 "" H 6850 3850 100 0001 C CNN
+	1    6850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8BDE8F
+P 5900 2650
+F 0 "#PWR?" H 5900 2500 50  0001 C CNN
+F 1 "+5V" H 5915 2823 50  0000 C CNN
+F 2 "" H 5900 2650 50  0001 C CNN
+F 3 "" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3850 4900 3850
+Wire Wire Line
+	5200 3150 5100 3150
+Wire Wire Line
+	5100 3150 5100 3500
+Wire Wire Line
+	5100 3500 4900 3500
+$Comp
+L own:HMC218BMS8GE U?
+U 1 1 5F8BF630
+P 4350 3650
+F 0 "U?" H 4350 4065 50  0000 C CNN
+F 1 "HMC218BMS8GE" H 4350 3974 50  0000 C CNN
+F 2 "" H 4350 3650 100 0001 C CNN
+F 3 "" H 4350 3650 100 0001 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4400 4200 4450
+Wire Wire Line
+	4200 4450 4300 4450
+Wire Wire Line
+	4500 4450 4500 4400
+Wire Wire Line
+	4400 4400 4400 4450
+Connection ~ 4400 4450
+Wire Wire Line
+	4400 4450 4500 4450
+Wire Wire Line
+	4300 4450 4300 4400
+Connection ~ 4300 4450
+Wire Wire Line
+	4300 4450 4400 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5F8C05DA
+P 4500 4500
+F 0 "#PWR?" H 4500 4250 50  0001 C CNN
+F 1 "GND" H 4505 4327 50  0000 C CNN
+F 2 "" H 4500 4500 50  0001 C CNN
+F 3 "" H 4500 4500 50  0001 C CNN
+	1    4500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4450 4500 4500
+Connection ~ 4500 4450
+Wire Wire Line
+	3800 3850 3650 3850
+Text Notes 7000 4600 0    50   ~ 0
+1.8-6.0GHz\nNF: 1dB\nGain: +26dB\nP1dB: 11dB
+Text Notes 4650 4550 0    50   ~ 0
+Conversion Loss: -7dB\nP1dB: 10dB
 $EndSCHEMATC
