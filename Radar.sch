@@ -44,7 +44,7 @@ Wire Notes Line style solid rgb(132, 0, 0)
 Wire Notes Line style solid rgb(132, 0, 0)
 	7350 3400 7200 3400
 $Comp
-L own:PA U?
+L Radar-rescue:PA-own U?
 U 1 1 5F894269
 P 7800 5200
 F 0 "U?" H 7800 5550 50  0001 C CNN
@@ -55,7 +55,7 @@ F 3 "" H 7800 5200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L own:PA U?
+L Radar-rescue:PA-own U?
 U 1 1 5F895397
 P 6700 5200
 F 0 "U?" H 6700 5550 50  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "" H 8800 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L own:PA U?
+L Radar-rescue:PA-own U?
 U 1 1 5F8A3F2E
 P 5650 5200
 F 0 "U?" H 5650 5550 50  0001 C CNN
