@@ -1,3 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HMC430
+F https://pl.mouser.com/datasheet/2/609/hmc430-1504038.pdf
+$ENDCMP
+#
+$CMP RFPA5542
+F https://pl.mouser.com/datasheet/2/412/RFPA5542%20Data%20Sheet-1314453.pdf
+$ENDCMP
+#
 #End Doc Library
