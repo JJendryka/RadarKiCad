@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -274,7 +274,7 @@ U 1 1 5FAEA3FD
 P 7650 3850
 F 0 "C54" V 7850 3800 50  0000 L CNN
 F 1 "100p" V 7750 3750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7650 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7650 3850 50  0001 C CNN
 F 3 "~" H 7650 3850 50  0001 C CNN
 	1    7650 3850
 	0    -1   -1   0   
@@ -412,17 +412,15 @@ F 3 "~" H 5750 4750 50  0001 C CNN
 	1    5750 4750
 	0    1    1    0   
 $EndComp
-Text HLabel 5550 4750 0    50   Input ~ 0
+Text HLabel 5500 4750 0    50   Input ~ 0
 PA_EN
-Wire Wire Line
-	5550 4750 5600 4750
 $Comp
 L Device:C_Small C48
 U 1 1 5FB18027
 P 6100 3850
 F 0 "C48" V 6300 3800 50  0000 L CNN
 F 1 "100p" V 6200 3750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6100 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6100 3850 50  0001 C CNN
 F 3 "~" H 6100 3850 50  0001 C CNN
 	1    6100 3850
 	0    -1   -1   0   
@@ -958,7 +956,7 @@ U 1 1 6063F390
 P 5550 3650
 F 0 "C60" H 5350 3550 50  0000 L CNN
 F 1 "DNP" H 5300 3650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5550 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5550 3650 50  0001 C CNN
 F 3 "~" H 5550 3650 50  0001 C CNN
 	1    5550 3650
 	-1   0    0    1   
@@ -973,7 +971,7 @@ U 1 1 6064CE61
 P 8250 4050
 F 0 "C61" H 8100 4000 50  0000 L CNN
 F 1 "100p" H 8000 4100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8250 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8250 4050 50  0001 C CNN
 F 3 "~" H 8250 4050 50  0001 C CNN
 	1    8250 4050
 	-1   0    0    1   
@@ -1015,4 +1013,6 @@ F 3 "" H 3350 4650 50  0001 C CNN
 	1    3350 4650
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	5500 4750 5600 4750
 $EndSCHEMATC
