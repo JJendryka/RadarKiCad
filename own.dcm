@@ -6,6 +6,12 @@ K dual opamp
 F ~
 $ENDCMP
 #
+$CMP C_Jumper
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP LT1722
 D Operational Amplifier
 K opamp

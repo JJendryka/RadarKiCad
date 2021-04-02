@@ -248,7 +248,7 @@ U 1 1 5FAE5488
 P 9500 4050
 F 0 "R26" V 9400 4050 50  0000 C CNN
 F 1 "50R" V 9600 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9430 4050 50  0001 C CNN
+F 2 "own:0402_Tapered" V 9430 4050 50  0001 C CNN
 F 3 "~" H 9500 4050 50  0001 C CNN
 	1    9500 4050
 	0    1    1    0   
@@ -268,19 +268,6 @@ Wire Wire Line
 	9700 4100 9700 4050
 Wire Wire Line
 	9700 4050 9650 4050
-$Comp
-L Device:C_Small C58
-U 1 1 5FAEA3FD
-P 7650 3850
-F 0 "C58" V 7850 3800 50  0000 L CNN
-F 1 "100pF" V 7750 3750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7650 3850 50  0001 C CNN
-F 3 "~" H 7650 3850 50  0001 C CNN
-	1    7650 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7350 3850 7550 3850
 Text HLabel 10000 3850 2    50   Input ~ 0
 RF_OUT
 Text HLabel 10000 4600 2    50   Input ~ 0
@@ -414,20 +401,7 @@ F 3 "~" H 5750 4750 50  0001 C CNN
 $EndComp
 Text HLabel 5500 4750 0    50   Input ~ 0
 PA_EN
-$Comp
-L Device:C_Small C52
-U 1 1 5FB18027
-P 6100 3850
-F 0 "C52" V 6300 3800 50  0000 L CNN
-F 1 "100pF" V 6200 3750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6100 3850 50  0001 C CNN
-F 3 "~" H 6100 3850 50  0001 C CNN
-	1    6100 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6200 3850 6250 3850
-Text Notes 7850 3800 0    50   ~ 0
+Text Notes 7600 3850 0    50   ~ 0
 27dBm
 Text Notes 9500 3800 0    50   ~ 0
 26dBm\n
@@ -478,7 +452,6 @@ Wire Wire Line
 	5200 3850 5250 3850
 Wire Wire Line
 	5250 3900 5250 3850
-Connection ~ 5250 3850
 $Comp
 L power:GND #PWR086
 U 1 1 5FB2738E
@@ -707,8 +680,6 @@ Wire Wire Line
 	8700 4600 10000 4600
 Text Notes 2900 3800 0    50   ~ 0
 0-10V
-Wire Wire Line
-	7750 3850 8250 3850
 $Comp
 L Connector:Conn_Coaxial J10
 U 1 1 5FBAD6CD
@@ -720,9 +691,6 @@ F 3 " ~" H 8250 4400 50  0001 C CNN
 	1    8250 4400
 	0    1    1    0   
 $EndComp
-Connection ~ 8250 3850
-Wire Wire Line
-	8250 3850 8750 3850
 $Comp
 L power:GND #PWR0100
 U 1 1 5FBB2D51
@@ -741,8 +709,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 3850 4550 3850
 Connection ~ 4850 3850
-Wire Wire Line
-	5250 3850 5550 3850
 $Comp
 L Connector:Conn_Coaxial J9
 U 1 1 5FBD0D23
@@ -767,9 +733,6 @@ F 3 "" H 5800 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 3300 5750 3300
-Connection ~ 5550 3850
-Wire Wire Line
-	5550 3850 6000 3850
 Wire Wire Line
 	5800 3300 5800 3350
 $Comp
@@ -801,36 +764,10 @@ Wire Wire Line
 Wire Wire Line
 	7400 4050 7700 4050
 Connection ~ 7400 4050
-$Comp
-L Device:C_Small C51
-U 1 1 6063F390
-P 5550 3650
-F 0 "C51" H 5350 3550 50  0000 L CNN
-F 1 "DNP" H 5300 3650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5550 3650 50  0001 C CNN
-F 3 "~" H 5550 3650 50  0001 C CNN
-	1    5550 3650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5550 3550 5550 3500
 Wire Wire Line
-	5550 3750 5550 3850
-$Comp
-L Device:C_Small C62
-U 1 1 6064CE61
-P 8250 4050
-F 0 "C62" H 8100 4000 50  0000 L CNN
-F 1 "100pF" H 8000 4100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8250 4050 50  0001 C CNN
-F 3 "~" H 8250 4050 50  0001 C CNN
-	1    8250 4050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
 	8250 4150 8250 4200
-Wire Wire Line
-	8250 3850 8250 3950
 Wire Wire Line
 	5500 4750 5600 4750
 Wire Wire Line
@@ -838,4 +775,35 @@ Wire Wire Line
 Wire Wire Line
 	3750 3850 3400 3850
 Connection ~ 3400 3850
+$Comp
+L own:C_Jumper CJ4
+U 1 1 606BB88C
+P 5550 3700
+F 0 "CJ4" H 5750 3400 50  0000 C CNN
+F 1 "100pF" H 5750 3300 50  0000 C CNN
+F 2 "own:0402_Jumper_Tapered" H 5588 3550 50  0001 C CNN
+F 3 "~" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3850 5400 3850
+Connection ~ 5250 3850
+Wire Wire Line
+	5850 3850 6250 3850
+$Comp
+L own:C_Jumper CJ5
+U 1 1 606CBCB9
+P 8250 4000
+F 0 "CJ5" H 8450 3700 50  0000 C CNN
+F 1 "100pF" H 8450 3600 50  0000 C CNN
+F 2 "own:0402_Jumper_Tapered" H 8288 3850 50  0001 C CNN
+F 3 "~" H 8250 4000 50  0001 C CNN
+	1    8250 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 3850 7350 3850
+Wire Wire Line
+	8400 3850 8750 3850
 $EndSCHEMATC
