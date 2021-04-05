@@ -456,17 +456,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 3600 4400 3550
 $Comp
-L own:AD5252 U10
-U 1 1 605A5EA2
-P 4850 4000
-F 0 "U10" H 5325 4665 50  0000 C CNN
-F 1 "AD5252" H 5325 4574 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 3450 50  0001 C CNN
-F 3 "" H 4250 3450 50  0001 C CNN
-	1    4850 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 605AD0A7
 P 4300 3900
@@ -1007,19 +996,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 5550 5450 5650
 $Comp
-L power:GND #PWR015
-U 1 1 6082EC77
-P 5450 6150
-F 0 "#PWR015" H 5450 5900 50  0001 C CNN
-F 1 "GND" H 5455 5977 50  0000 C CNN
-F 2 "" H 5450 6150 50  0001 C CNN
-F 3 "" H 5450 6150 50  0001 C CNN
-	1    5450 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 6150 5450 6050
-$Comp
 L power:GND #PWR022
 U 1 1 60837F8E
 P 7550 6250
@@ -1057,7 +1033,7 @@ AR Path="/60524BC3/60855A7C" Ref="J?"  Part="1"
 AR Path="/605249CC/60855A7C" Ref="J5"  Part="1" 
 F 0 "J5" V 3437 4629 50  0000 C CNN
 F 1 "Conn_Coaxial" V 3346 4629 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 3200 4700 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 3200 4700 50  0001 C CNN
 F 3 " ~" H 3200 4700 50  0001 C CNN
 	1    3200 4700
 	0    1    -1   0   
@@ -1130,17 +1106,6 @@ F 3 "~" H 5650 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP4
-U 1 1 609439EE
-P 5450 6050
-F 0 "TP4" H 5508 6168 50  0000 L CNN
-F 1 "TP" H 5508 6077 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5650 6050 50  0001 C CNN
-F 3 "~" H 5650 6050 50  0001 C CNN
-	1    5450 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP5
 U 1 1 609500A3
 P 7550 5750
@@ -1194,4 +1159,15 @@ Text HLabel 7050 3950 2    50   BiDi ~ 0
 SDA
 Text HLabel 7050 4050 2    50   Input ~ 0
 SCL
+$Comp
+L own:AD5252 U10
+U 1 1 605A5EA2
+P 4850 4000
+F 0 "U10" H 5325 4665 50  0000 C CNN
+F 1 "AD5252" H 5325 4574 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4250 3450 50  0001 C CNN
+F 3 "" H 4250 3450 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

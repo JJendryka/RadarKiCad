@@ -171,7 +171,7 @@ U 1 1 5FA1B39E
 P 3550 3600
 F 0 "J6" V 3787 3529 50  0000 C CNN
 F 1 "Conn_Coaxial" V 3696 3529 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 3550 3600 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 3550 3600 50  0001 C CNN
 F 3 " ~" H 3550 3600 50  0001 C CNN
 	1    3550 3600
 	0    1    -1   0   
@@ -338,10 +338,6 @@ Wire Wire Line
 	8350 4350 8350 4400
 Wire Wire Line
 	7750 3700 7750 3350
-Wire Wire Line
-	4600 2650 4600 3400
-Wire Wire Line
-	4450 3800 4450 3050
 $Comp
 L power:+5V #PWR047
 U 1 1 6047D30C
@@ -424,68 +420,6 @@ F 3 "" H 8300 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 2900 8300 2950
-$Comp
-L Device:C C27
-U 1 1 60493731
-P 4800 3400
-F 0 "C27" V 4548 3400 50  0000 C CNN
-F 1 "220pF" V 4639 3400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4838 3250 50  0001 C CNN
-F 3 "~" H 4800 3400 50  0001 C CNN
-	1    4800 3400
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GND #PWR040
-U 1 1 60493737
-P 4050 3100
-F 0 "#PWR040" H 4050 2850 50  0001 C CNN
-F 1 "GND" H 4055 2927 50  0000 C CNN
-F 2 "" H 4050 3100 50  0001 C CNN
-F 3 "" H 4050 3100 50  0001 C CNN
-	1    4050 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 3100 4050 3050
-Wire Wire Line
-	4050 3050 4100 3050
-Wire Wire Line
-	4400 3050 4450 3050
-$Comp
-L Device:C C26
-U 1 1 60495DDF
-P 4250 3050
-F 0 "C26" V 3998 3050 50  0000 C CNN
-F 1 "220pF" V 4089 3050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4288 2900 50  0001 C CNN
-F 3 "~" H 4250 3050 50  0001 C CNN
-	1    4250 3050
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	4600 3400 4650 3400
-$Comp
-L power:GND #PWR041
-U 1 1 60495DE6
-P 5000 3450
-F 0 "#PWR041" H 5000 3200 50  0001 C CNN
-F 1 "GND" H 5005 3277 50  0000 C CNN
-F 2 "" H 5000 3450 50  0001 C CNN
-F 3 "" H 5000 3450 50  0001 C CNN
-	1    5000 3450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 3400 5000 3400
-Wire Wire Line
-	5000 3400 5000 3450
-Connection ~ 4600 3400
-Wire Wire Line
-	4600 3400 4600 3800
-Connection ~ 4450 3050
-Wire Wire Line
-	4450 3050 4450 2500
 Text HLabel 7750 2200 1    50   Input ~ 0
 SW_CTR1
 $Comp
@@ -494,7 +428,7 @@ U 1 1 6054EDB6
 P 8850 3500
 F 0 "J7" V 9087 3429 50  0000 C CNN
 F 1 "Conn_Coaxial" V 8996 3429 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 8850 3500 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 8850 3500 50  0001 C CNN
 F 3 " ~" H 8850 3500 50  0001 C CNN
 	1    8850 3500
 	0    1    -1   0   
@@ -511,7 +445,7 @@ U 1 1 6089D801
 P 9800 3000
 F 0 "J8" V 10037 2929 50  0000 C CNN
 F 1 "Conn_Coaxial" V 9946 2929 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 9800 3000 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 9800 3000 50  0001 C CNN
 F 3 " ~" H 9800 3000 50  0001 C CNN
 	1    9800 3000
 	1    0    0    -1  
@@ -775,4 +709,8 @@ Wire Wire Line
 	9100 2850 9100 2400
 Wire Wire Line
 	9100 3300 9100 3850
+Wire Wire Line
+	4450 2500 4450 3800
+Wire Wire Line
+	4600 2650 4600 3800
 $EndSCHEMATC
