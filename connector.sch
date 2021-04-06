@@ -15,9 +15,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 6300 4450 2    50   Output ~ 0
 PA_EN
-Text HLabel 5250 4250 0    50   Output ~ 0
-SW_CTR1
 Text HLabel 5250 4350 0    50   Output ~ 0
+SW_CTR1
+Text HLabel 5250 4250 0    50   Output ~ 0
 SW_CTR2
 Text HLabel 6300 4150 2    50   BiDi ~ 0
 SDA
