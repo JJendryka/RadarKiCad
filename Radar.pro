@@ -1,4 +1,4 @@
-update=Tue 06 Apr 2021 01:40:36 PM CEST
+update=06.04.2021 16:37:54
 version=1
 last_client=kicad
 [general]
@@ -263,7 +263,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=RF
-Clearance=0.09
+Clearance=0.15
 TrackWidth=0.349374
 ViaDiameter=0.8
 ViaDrill=0.4
