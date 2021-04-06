@@ -451,7 +451,7 @@ L Device:C C46
 U 1 1 6062F648
 P 8850 2550
 F 0 "C46" H 8965 2596 50  0000 L CNN
-F 1 "100nF" H 8965 2505 50  0000 L CNN
+F 1 "10uF" H 8965 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8888 2400 50  0001 C CNN
 F 3 "~" H 8850 2550 50  0001 C CNN
 	1    8850 2550
@@ -465,7 +465,7 @@ L Device:C C45
 U 1 1 6062F650
 P 7750 2550
 F 0 "C45" H 7865 2596 50  0000 L CNN
-F 1 "1uF" H 7865 2505 50  0000 L CNN
+F 1 "10uF" H 7865 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7788 2400 50  0001 C CNN
 F 3 "~" H 7750 2550 50  0001 C CNN
 	1    7750 2550
@@ -514,17 +514,6 @@ Wire Notes Line
 	7200 2000 9650 2000
 Text Notes 9400 3050 0    50   ~ 0
 3V3\n
-$Comp
-L Regulator_Linear:L78L33_SO8 U21
-U 1 1 60631119
-P 8300 2350
-F 0 "U21" H 8300 2592 50  0000 C CNN
-F 1 "L78L33_SO8" H 8300 2501 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8400 2550 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 8500 2350 50  0001 C CNN
-	1    8300 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR071
 U 1 1 60631EF6
@@ -649,4 +638,15 @@ Wire Wire Line
 	8550 3850 8850 3850
 Wire Wire Line
 	8850 3850 8850 3950
+$Comp
+L Regulator_Linear:LT1117-3.3 U21
+U 1 1 606CDFC4
+P 8300 2350
+F 0 "U21" H 8300 2592 50  0000 C CNN
+F 1 "LT1117-3.3" H 8300 2501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8300 2350 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1117fd.pdf" H 8300 2350 50  0001 C CNN
+	1    8300 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
