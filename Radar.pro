@@ -1,4 +1,4 @@
-update=Tue 06 Apr 2021 06:08:54 PM CEST
+update=Sun 18 Apr 2021 05:43:53 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -32,7 +32,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0.09999999999999999
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -263,7 +263,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=RF
-Clearance=0.15
+Clearance=0.09
 TrackWidth=0.349374
 ViaDiameter=0.8
 ViaDrill=0.4
